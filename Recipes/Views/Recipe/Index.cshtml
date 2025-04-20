@@ -1,0 +1,116 @@
+@model RecipeViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    ViewData["Footer"] = "Recipes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<form asp-controller="recipe" asp-action="Index" method="get">
+    <label>Cuisine:</label>
+    <select asp-for="RecipeCuisine" asp-items="Model.Cuisines">
+        <option value="">All</option>
+    </select>
+
+    <label>Dish Type:</label>
+    <select asp-for="RecipeDishType" asp-items="Model.DishTypes">
+        <option value="">All</option>
+    </select>
+
+    <label>Vegetarian:</label>
+    <select asp-for="RecipeVegetarian" asp-items="Model.IsVegetarian">
+        <option value="">All</option>
+    </select>
+
+    <label>Difficulty:</label>
+    <select asp-for="RecipeDifficulty" asp-items="Model.Difficulties">
+        <option value="">All</option>
+    </select>
+
+
+    <label>Name:</label>
+    <input asp-for="SearchString"/>
+
+    <button type="submit">Filter</button>
+</form>
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Recipes![0].Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Recipes![0].Cuisine)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Recipes![0].DishType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Recipes![0].IsVegetarian)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Recipes![0].PrepTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Recipes![0].CookTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Recipes![0].TotalTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Recipes![0].Difficulty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Recipes![0].AverageRating)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Recipes!)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cuisine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DishType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsVegetarian)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrepTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CookTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Difficulty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AverageRating)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

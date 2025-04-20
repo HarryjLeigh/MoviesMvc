@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies", "Movies\Movies.csproj", "{683B00D7-7C32-41C1-B0EA-CA8F184197F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipes", "Recipes\Recipes.csproj", "{6FFB0D12-819D-4505-B527-0A2F2D388C9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{683B00D7-7C32-41C1-B0EA-CA8F184197F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683B00D7-7C32-41C1-B0EA-CA8F184197F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683B00D7-7C32-41C1-B0EA-CA8F184197F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683B00D7-7C32-41C1-B0EA-CA8F184197F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FFB0D12-819D-4505-B527-0A2F2D388C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FFB0D12-819D-4505-B527-0A2F2D388C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FFB0D12-819D-4505-B527-0A2F2D388C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FFB0D12-819D-4505-B527-0A2F2D388C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
