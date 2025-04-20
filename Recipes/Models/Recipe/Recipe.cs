@@ -27,7 +27,7 @@ public class Recipe
     public int PrepTime { get; set; }
 
     [Display(Name = "Cook Time (mins)")]
-    [Range(1, 240)]
+    [Range(0, 240)]
     public int CookTime { get; set; }
 
     [Display(Name = "Total Time (mins)")]

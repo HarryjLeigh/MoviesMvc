@@ -728,3 +728,4 @@ C:\Users\harry\Documents\Rider\MoviesMvc\Recipes\obj\Debug\net9.0\refint\Recipes
 C:\Users\harry\Documents\Rider\MoviesMvc\Recipes\obj\Debug\net9.0\Recipes.pdb
 C:\Users\harry\Documents\Rider\MoviesMvc\Recipes\obj\Debug\net9.0\Recipes.genruntimeconfig.cache
 C:\Users\harry\Documents\Rider\MoviesMvc\Recipes\obj\Debug\net9.0\ref\Recipes.dll
+C:\Users\harry\Documents\Rider\MoviesMvc\Recipes\obj\Debug\net9.0\Recipes.sourcelink.json
